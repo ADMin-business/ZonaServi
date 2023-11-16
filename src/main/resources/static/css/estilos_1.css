@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    font-family: "Audiowide", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    height: 70px;
+}
+nav{
+    background-color:white;
+}
+body{
+    background-color: whitesmoke;
+    
+}
+a{
+    color: grey
+}
+button{
+    color: grey
+}
+ul{
+    color: red
+}
+
