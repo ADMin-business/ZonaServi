@@ -28,3 +28,20 @@ input[type="number"]::-webkit-outer-spin-button {
     color: gold;
       cursor: pointer;
 }
+.navbar navbar-expand-sm navbar-white{
+    background-color:#f3eff5 ; 
+   
+   
+}
+.btn{
+    background-color:#2374ab;
+    color: white;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #5798d4;
+}
