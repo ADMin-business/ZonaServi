@@ -200,5 +200,18 @@ public String sesion(HttpSession session, @RequestParam (name = "categoriaServic
         }
 
     }
+    
+    @PreAuthorize("hasAnyRole('ROLE_ADM')")
+    @GetMapping("/eliminar/{id}") 
+    public String eliminarGet(@PathVariable String id, ModelMap modelo){
+        modelo.put("usuario", cS.getOne(id));
+        return "sesion-admin.html";
+    }
+   
+    @PostMapping("/eliminar/{id}")
+    public String eliminarPost(@PathVariable String id, ModelMap modelo){
+        cS.bajaCliente(id);
+        return "sesion-admin.html";
+   }
 
 }
