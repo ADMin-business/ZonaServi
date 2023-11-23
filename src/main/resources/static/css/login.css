@@ -141,7 +141,7 @@ button{
 
     padding: 15px 155px;
     border: none;
-    background-color: #2374ab;
+   background-color: #72b01d;
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -152,10 +152,10 @@ button{
 
 .submitBtnR {
     display: block;
-
-    padding: 15px 155px;
+background-color: #2374ab;
+    padding: 15px 150px;
     border: none;
-    background-color: #72b01d;
+    
     color: #f3eff5;
     border-radius: 6px;
     cursor: pointer;
@@ -166,12 +166,12 @@ button{
 
 .submitBtnR:hover {
     color: whitesmoke;
-    background-color: #3f7d20;
+    background-color:  #0d0157;
     transform: translateY(-2px);
 }
 
 .submitBtn:hover {
-    background-color: #0d0157;
+    background-color:   #3f7d20;
     transform: translateY(-2px);
 }
 
@@ -206,8 +206,10 @@ h3 {
     margin-right: 100px;
 }
 .Logoletra{
-width:200px;
-height: 60px;
+width:260px;
+height: 230px;
+margin-bottom: -70px;
+margin-left: -30px;
 }
 
 <!--registro prueba-->
