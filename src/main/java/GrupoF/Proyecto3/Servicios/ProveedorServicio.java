@@ -1,6 +1,7 @@
 package GrupoF.Proyecto3.Servicios;
 
 
+import GrupoF.Proyecto3.Entidades.Cliente;
 import GrupoF.Proyecto3.Entidades.Imagen;
 import GrupoF.Proyecto3.Entidades.Proveedor;
 import GrupoF.Proyecto3.Enumeradores.NombreRol;
@@ -226,4 +227,7 @@ public class ProveedorServicio implements UserDetailsService {
         return pR.buscarPorCategoria(categoriaServicio);
     }
     
+    public Proveedor getOne(String id){
+        return pR.getOne(id);
+    }
 }
