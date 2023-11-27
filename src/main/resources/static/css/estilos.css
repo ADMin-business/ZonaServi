@@ -120,40 +120,43 @@ button:hover{
     z-index: 0;
 }
 
+
 .submitBtn {
     display: block;
-    margin-left: auto;
-    padding: 15px 30px;
+
+    padding: 15px 168px;
     border: none;
-    background-color: #dc3545;
+    background-color: #2374ab;
     color: white;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px
+    font-size: 18px;
+    margin-top: 30px;
+    margin-right: 20px;
 }
 
 .submitBtnR {
     display: block;
-    margin-left: auto;
-    padding: 10px 20px;
+
+    padding: 15px 155px;
     border: none;
-    background-color: transparent;
-    color: #dc3545;
+    background-color: #72b01d;
+    color: #f3eff5;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
     margin-top: 20px;
-
+    margin-right: 30px;
 }
 
 .submitBtnR:hover {
-    background-color: #dc3545;
+    color: whitesmoke;
+    background-color: #3f7d20;
     transform: translateY(-2px);
 }
 
 .submitBtn:hover {
-    background-color: #dc3545;
+    background-color: #0d0157;
     transform: translateY(-2px);
 }
 
@@ -167,7 +170,8 @@ button:hover{
 }
 
 .input:focus {
-    border: 2px solid red;
+    border: 2px solid #2374ab;
+
 }
 
 .input:not(:placeholder-shown)+.label {
@@ -177,6 +181,7 @@ button:hover{
     font-size: 14px;
     font-weight: 600;
 }
+
 
 h3 {
     text-align: center;
