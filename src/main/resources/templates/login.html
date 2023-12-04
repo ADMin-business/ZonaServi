@@ -3,7 +3,7 @@
     <head>
         <title>Zona Servi</title>
         <meta charset="UTF-8">
-         <link rel="icon" type="image/svg+xml" href="/img/Lg_sf.png" />
+        <link rel="icon" type="image/svg+xml" href="/img/Logosolo_zs_sinfondo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/bg.css">
@@ -14,22 +14,27 @@
         <nav th:replace="/fragments/navbar :: nav"> </nav>
 
         <div class="signupFrm">
-            <form th:action="@{/ingresoChk}" class="form" method="POST">
+            <div class="descripcion">
+                <img src="/img/Logo_zs_sinfondo.png" class="Logoletra">
+                <h2>Zona Servi nos conecta  proveedores y clientes para trabajar juntos.</h2>
                 
+            </div>
+            <form th:action="@{/ingresoChk}" class="form" method="POST">
+
                 <h3 class="title">Iniciar sesión</h3>             
 
-                
-         
-        <div th:if="${notificacion != null}" class="card text-white bg-success mb-3 mt-3 mensajeExito" >
-            <div class="card-body">
-                <p class="card-text" th:text="${notificacion}"></p>
-            </div>
-        </div>
-      <div th:if="${error != null}" class="card text-white bg-danger mb-3 mensajeError" >
-            <div class="card-body">
-                <p class="card-text" th:text="${error}"></p>
-            </div>
-        </div>
+
+
+                <div th:if="${notificacion != null}" class="card text-white bg-success mb-3 mt-3 mensajeExito" >
+                    <div class="card-body">
+                        <p class="card-text" th:text="${notificacion}"></p>
+                    </div>
+                </div>
+                <div th:if="${error != null}" class="card text-white bg-danger mb-3 mensajeError" >
+                    <div class="card-body">
+                        <p class="card-text" th:text="${error}"></p>
+                    </div>
+                </div>
 
                 <div class="inputContainer">
                     <input type="email" class="input" placeholder="service@gmail.com" name="correo" th:value="${correo}" required>
@@ -41,13 +46,21 @@
                     <label for="" class="label">Contraseña</label>
                 </div>
 
-                <input type="submit" class="submitBtn" value="Enviar">
+                <input type="submit" class="submitBtn" value="Iniciar Sesion">
+ 
+                <div class="btn-group">                 
+                    <input type="button" class="submitBtnR"  data-bs-toggle="dropdown" aria-expanded="false" value="Crear cuenta nueva">
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/registro?modo=cliente">Cliente</a></li>
+                        <li><a class="dropdown-item" href="/registro?modo=proveedor">Proveedor</a></li>
+                    </ul>
+                </div>
             </form>
         </div> 
-  
-        
+
+
         <footer th:replace="/fragments/footer :: footer"> </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 
 </html>
