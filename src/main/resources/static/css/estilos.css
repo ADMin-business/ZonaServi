@@ -135,6 +135,38 @@ button:hover{
     margin-right: 20px;
 }
 
+.submitBtnS {
+    display: block;
+
+    padding: 15px 138px;
+    border: none;
+    background-color: #2374ab;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+/*    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;*/
+    margin: 10px auto;
+}
+
+.submitBtnB {
+    display: block;
+
+    padding: 10px 170px;
+    border: none;
+    background-color: #f00f0f;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+/*    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;*/
+    margin: 10px auto;
+}
+
 .submitBtnR {
     display: block;
 

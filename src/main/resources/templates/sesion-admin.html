@@ -84,7 +84,7 @@
                                 <td style="font-size: 85%" th:text=${proveedor.numMatricula}></td>
                                 <td style="font-size: 85%" th:text=${proveedor.costoHora}></td>
                                 <td style="font-size: 85%">
-                                    <a th:href="@{/usuario/modificacion/__${proveedor.id}__}"><i class="fas fa-feather-alt"></i>✏️ </a>
+                                    <a th:href="@{/usuario/modificacion?modo=proveedor}"><i class="fas fa-feather-alt"></i>✏️ </a>
                                     <a th:href="@{/usuario/modificacion/__${proveedor.id}__}"><i class="fas fa-feather-alt"></i> 🗑</a>
                                 </td>
                             </tr>
